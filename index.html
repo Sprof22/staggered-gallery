@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header w-full bg-slate-300 h-36 flex justify-center align-center">
+        <form class="mb-10 p-10" id="search-form">
+            <input type="text" class="input-field border border-gray-600 h-10 rounded px-4"
+            placeholder="Search for Photos">
+            <button class="bg-blue-600 text-white h-10 px-5 rounded shadow">Submit</button>
+        </form>
+    </div>
+
+    <div class="gallery-body total-app p-8">
+        <div id="skel-container" class="showing grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
+            <div class="skel-container-column relative">
+                <div class="author-name absolute left-4 bottom-4 h-[20px] w-2/3 bg-slate-300 rounded-full"></div>
+            </div>            
+            <div class="skel-container-column relative">
+                <div class="author-name absolute left-4 bottom-4 h-[20px] w-2/3 bg-slate-300 rounded-full"></div>
+            </div>            
+            <div class="skel-container-column relative">
+                <div class="author-name absolute left-4 bottom-4 h-[20px] w-2/3 bg-slate-300 rounded-full"></div>
+            </div>            
+            <div class="skel-container-column relative">
+                <div class="author-name absolute left-4 bottom-4 h-[20px] w-2/3 bg-slate-300 rounded-full"></div>
+            </div>            
+            <div class="skel-container-column relative">
+                <div class="author-name absolute left-4 bottom-4 h-[20px] w-2/3 bg-slate-300 rounded-full"></div>
+            </div>            
+            <div class="skel-container-column relative">
+                <div class="author-name absolute left-4 bottom-4 h-[20px] w-2/3 bg-slate-300 rounded-full"></div>
+            </div>            
+            <div class="skel-container-column relative">
+                <div class="author-name absolute left-4 bottom-4 h-[20px] w-2/3 bg-slate-300 rounded-full"></div>
+            </div>            
+            <div class="skel-container-column relative">
+                <div class="author-name absolute left-4 bottom-4 h-[20px] w-2/3 bg-slate-300 rounded-full"></div>
+            </div>            
+            <div class="skel-container-column relative">
+                <div class="author-name absolute left-4 bottom-4 h-[20px] w-2/3 bg-slate-300 rounded-full"></div>
+            </div>            
+        </div>
+        <div id="main-content">
+            <div id="photo-container" class="grid grid-cols-1 md:grid-cols-3 gap-4 items-start">
+                <div class="photo-container-column grid grid-cols-1 gap-4"></div>
+                <div class="photo-container-column grid grid-cols-1 gap-4"></div>
+                <div class="photo-container-column grid grid-cols-1 gap-4"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
