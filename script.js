@@ -245,4 +245,15 @@ function UnspashClient() {
   };
 } //end function UnsplashClient
 
+function clickButton(){
+  let searchInput = document.querySelector("#search-input");
+  let searchQueryData = document.querySelector("#search-query-data");
 
+  searchQueryData.innerHTML = 'Showing Search Results for, ' + '"' + searchInput.value + '"';
+}
+
+// var searchInput2 = document.getElementById('search-input').addEventListener('input', function() {
+//   return(this.value);
+// });
+
+// document.getElementById('change-am').innerHTML = searchInput2

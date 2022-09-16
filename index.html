@@ -11,12 +11,16 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="header w-full bg-slate-300 h-36 flex justify-center align-center">
-        <form class="mb-10 p-10" id="search-form">
-            <input type="text" class="input-field border border-gray-600 h-10 rounded px-4"
-            placeholder="Search for Photos">
-            <button class="bg-blue-600 text-white h-10 px-5 rounded shadow">Submit</button>
-        </form>
+    <div class="header w-full bg-slate-300 h-36">
+        <div class="flex justify-center align-center">
+            <form class="mb-10 p-10" id="search-form">
+                <input type="text" id="search-input" class="input-field border border-gray-600 h-10 rounded px-4"
+                placeholder="Search for Photos">
+                <button onclick="clickButton()" class="bg-blue-600 text-white h-10 px-5 rounded shadow">Submit</button> <br>
+                <div id="search-query-data" class="h-8"></div>
+            </form>
+        </div>
+        
     </div>
 
     <div class="gallery-body total-app p-8">
